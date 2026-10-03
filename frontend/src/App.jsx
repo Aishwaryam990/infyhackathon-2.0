@@ -4,7 +4,7 @@ import AdminLogin from "./AdminLogin";
 import "./styles/technest-ui.css";
 import "./styles/product-details.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://infyhackathon-2-0.onrender.com";
 
 // Predefined category -> subcategory mapping for TechNest.
 // Existing products with older/custom subcategories are preserved below.
