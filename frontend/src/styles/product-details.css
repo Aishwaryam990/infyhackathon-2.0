@@ -1,0 +1,342 @@
+/* =========================================================
+   TECHNEST - PRODUCT DETAILS
+   ========================================================= */
+
+/* Overlay */
+
+.product-details-overlay {
+  backdrop-filter: blur(6px);
+  background: rgba(15, 23, 42, 0.68) !important;
+}
+
+/* Main modal */
+
+.product-details-modal {
+  width: min(1000px, 96vw) !important;
+  max-width: 1000px !important;
+
+  max-height: 92vh !important;
+
+  border-radius: 24px !important;
+
+  overflow-y: auto;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Header */
+
+.product-details-modal > div {
+  padding: 28px !important;
+}
+
+/* Product title */
+
+.product-details-modal h2 {
+  font-size: 28px !important;
+  line-height: 1.2;
+
+  color: #111827;
+
+  letter-spacing: -0.5px;
+}
+
+/* Close button */
+
+.product-details-modal > div > div:first-child button {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f1f5f9;
+
+  color: #475569;
+
+  transition: all 0.18s ease;
+}
+
+.product-details-modal > div > div:first-child button:hover {
+  background: #fee2e2;
+  color: #dc2626;
+  transform: rotate(90deg);
+}
+
+/* Product image */
+
+.product-details-modal img {
+  height: 390px !important;
+
+  margin-top: 20px !important;
+
+  border-radius: 18px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f8fafc,
+      #eef2f7
+    ) !important;
+
+  padding: 20px;
+
+  object-fit: contain !important;
+}
+
+/* Wishlist */
+
+.product-details-modal img + button {
+  width: 46px !important;
+  height: 46px !important;
+
+  top: 32px !important;
+  right: 14px !important;
+
+  font-size: 21px;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 6px 18px rgba(15, 23, 42, 0.14) !important;
+}
+
+/* Description */
+
+.product-details-modal > div > p {
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #64748b !important;
+
+  margin-top: 22px !important;
+}
+
+/* Specifications */
+
+.product-details-modal
+  .bg-slate-50 {
+  border: 1px solid #e5e7eb;
+
+  background: #f8fafc !important;
+
+  border-radius: 16px !important;
+}
+
+.product-details-modal
+  .bg-slate-50 h3 {
+  color: #111827;
+}
+
+/* Product information boxes */
+
+.product-details-modal
+  .grid.grid-cols-2
+  > div {
+  border: 1px solid #e5e7eb;
+
+  background: white !important;
+
+  border-radius: 14px !important;
+
+  transition:
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.product-details-modal
+  .grid.grid-cols-2
+  > div:hover {
+  border-color: #bfdbfe;
+
+  transform: translateY(-2px);
+}
+
+.product-details-modal
+  .grid.grid-cols-2
+  strong {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+
+  margin-bottom: 4px;
+}
+
+.product-details-modal
+  .grid.grid-cols-2
+  p {
+  font-weight: 700;
+
+  color: #111827;
+}
+
+/* Price */
+
+.product-details-modal
+  .text-2xl.font-bold {
+  color: #111827 !important;
+
+  font-size: 30px !important;
+}
+
+/* =========================================================
+   REVIEWS
+   ========================================================= */
+
+.product-details-modal
+  .border-t {
+  margin-top: 30px !important;
+  padding-top: 28px !important;
+}
+
+.product-details-modal
+  .border-t h3 {
+  font-size: 22px;
+}
+
+/* Review form */
+
+.product-details-modal
+  .border-t
+  .bg-slate-50 {
+  padding: 20px !important;
+
+  border-radius: 16px !important;
+}
+
+.product-details-modal textarea {
+  border-color: #dbe1ea !important;
+
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.product-details-modal textarea:focus {
+  border-color: #60a5fa !important;
+
+  box-shadow:
+    0 0 0 3px rgba(59, 130, 246, 0.1);
+
+  outline: none;
+}
+
+/* Stars */
+
+.product-details-modal
+  .text-3xl {
+  cursor: pointer;
+}
+
+/* Individual reviews */
+
+.product-details-modal
+  .space-y-3
+  > div {
+  background: white;
+
+  border: 1px solid #e5e7eb !important;
+
+  border-radius: 14px !important;
+
+  transition:
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.product-details-modal
+  .space-y-3
+  > div:hover {
+  border-color: #dbeafe !important;
+
+  box-shadow:
+    0 5px 18px rgba(15, 23, 42, 0.06);
+}
+
+/* Add to cart */
+
+.product-details-modal
+  > div
+  > button:last-child {
+  min-height: 52px;
+
+  border-radius: 13px !important;
+
+  font-size: 16px;
+
+  background: #2563eb !important;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.2);
+
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.product-details-modal
+  > div
+  > button:last-child:hover {
+  background: #1d4ed8 !important;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(37, 99, 235, 0.28);
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .product-details-modal {
+    width: 96vw !important;
+
+    max-height: 94vh !important;
+
+    border-radius: 18px !important;
+  }
+
+  .product-details-modal > div {
+    padding: 18px !important;
+  }
+
+  .product-details-modal h2 {
+    font-size: 22px !important;
+  }
+
+  .product-details-modal img {
+    height: 260px !important;
+
+    padding: 12px;
+  }
+
+  .product-details-modal
+    .grid.grid-cols-2 {
+    gap: 10px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .product-details-modal
+    .grid.grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .product-details-modal img {
+    height: 220px !important;
+  }
+}

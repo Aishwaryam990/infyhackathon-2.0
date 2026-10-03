@@ -1,0 +1,578 @@
+/* =========================================================
+   TECHNEST UI
+   Customer Store
+   ========================================================= */
+
+/* ---------- GLOBAL ---------- */
+
+body {
+  margin: 0;
+  background: #f6f8fc;
+  color: #172033;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+/* =========================================================
+   CUSTOMER STORE HEADER
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > header {
+  background: #ffffff !important;
+  color: #172033 !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  box-shadow: 0 2px 15px rgba(15, 23, 42, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.min-h-screen.bg-slate-100 > header > div {
+  max-width: 1500px !important;
+  padding: 16px 28px !important;
+}
+
+.min-h-screen.bg-slate-100 > header h1 {
+  color: #111827 !important;
+  font-size: 24px !important;
+  font-weight: 850 !important;
+  letter-spacing: -0.6px;
+}
+
+.min-h-screen.bg-slate-100 > header p {
+  color: #64748b !important;
+}
+
+/* Header buttons */
+
+.min-h-screen.bg-slate-100 > header button {
+  border-radius: 10px !important;
+  transition: all 0.18s ease;
+}
+
+.min-h-screen.bg-slate-100 > header button:hover {
+  transform: translateY(-1px);
+}
+
+/* Cart */
+
+.min-h-screen.bg-slate-100 > header button.bg-slate-900 {
+  background: #111827 !important;
+  box-shadow: 0 5px 15px rgba(15, 23, 42, 0.18);
+}
+
+.min-h-screen.bg-slate-100 > header button.bg-slate-900:hover {
+  background: #1f2937 !important;
+}
+
+/* Notification circles */
+
+.min-h-screen.bg-slate-100 > header
+  button
+  span.absolute {
+  border: 2px solid white;
+  font-weight: 800;
+}
+
+/* =========================================================
+   MAIN STORE WIDTH
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > main {
+  max-width: 1500px !important;
+  padding: 32px 28px 70px !important;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child {
+  margin-bottom: 30px !important;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  > div:first-child {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 265px;
+
+  border-radius: 24px !important;
+
+  padding: 36px !important;
+
+  background:
+    radial-gradient(
+      circle at 88% 20%,
+      rgba(59, 130, 246, 0.35),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #0f172a 0%,
+      #172554 55%,
+      #1e3a8a 100%
+    ) !important;
+
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.14) !important;
+}
+
+/* Decorative circle */
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  > div:first-child::after {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  right: -100px;
+  top: -110px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.04);
+
+  pointer-events: none;
+}
+
+/* Hero content */
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  > div:first-child
+  > div:first-child {
+  position: relative;
+  z-index: 2;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  > div:first-child
+  h2 {
+  color: white !important;
+  font-size: 42px !important;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  > div:first-child
+  p {
+  color: #cbd5e1 !important;
+}
+
+/* =========================================================
+   SEARCH PANEL
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  > div:first-child
+  > div.mt-6 {
+  position: relative;
+  z-index: 3;
+
+  margin-top: 32px !important;
+
+  padding: 8px !important;
+
+  border-radius: 16px !important;
+
+  background: white !important;
+
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.18) !important;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  input,
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  select {
+  min-height: 48px;
+
+  background: #f8fafc !important;
+
+  border-color: #e2e8f0 !important;
+
+  border-radius: 11px !important;
+
+  color: #172033 !important;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  input:focus,
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  select:focus {
+  background: white !important;
+
+  border-color: #93c5fd !important;
+
+  outline: none;
+
+  box-shadow:
+    0 0 0 3px rgba(59, 130, 246, 0.12) !important;
+}
+
+/* =========================================================
+   PRODUCT COUNT
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > main
+  > section:first-child
+  > div.flex {
+  margin-top: 20px !important;
+}
+
+/* =========================================================
+   PRODUCT GRID
+   ========================================================= */
+
+/* Five cards on large screens */
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+}
+
+/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  border-radius: 18px !important;
+
+  border: 1px solid #e5e7eb !important;
+
+  background: white !important;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 5px 18px rgba(15, 23, 42, 0.06) !important;
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease !important;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div:hover {
+  transform: translateY(-5px);
+
+  border-color: #bfdbfe !important;
+
+  box-shadow:
+    0 16px 32px rgba(15, 23, 42, 0.12) !important;
+}
+
+/* =========================================================
+   PRODUCT IMAGE
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  > div:first-child {
+  height: 210px !important;
+
+  flex-shrink: 0;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f8fafc,
+      #eef2f7
+    ) !important;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  > div:first-child
+  img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 14px;
+
+  transition: transform 0.25s ease;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div:hover
+  > div:first-child
+  img {
+  transform: scale(1.045);
+}
+
+/* Wishlist button */
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  > div:first-child
+  > button {
+  width: 42px !important;
+  height: 42px !important;
+
+  top: 12px !important;
+  right: 12px !important;
+
+  font-size: 20px;
+
+  box-shadow:
+    0 5px 15px rgba(15, 23, 42, 0.12) !important;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  > div:first-child
+  > button:hover {
+  transform: scale(1.08);
+}
+
+/* =========================================================
+   PRODUCT INFORMATION
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  > div.p-5 {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 17px !important;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  h2 {
+  min-height: 48px;
+
+  color: #111827 !important;
+
+  font-size: 18px !important;
+
+  line-height: 1.3;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  .line-clamp-2 {
+  min-height: 42px;
+}
+
+/* Price */
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  .text-xl {
+  color: #111827 !important;
+  font-size: 22px !important;
+  font-weight: 850 !important;
+}
+
+/* Stock */
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  .text-green-600 {
+  color: #059669 !important;
+  font-weight: 700;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  .text-red-600 {
+  color: #dc2626 !important;
+  font-weight: 700;
+}
+
+/* =========================================================
+   PRODUCT BUTTONS
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  .grid.grid-cols-2 {
+  margin-top: auto;
+
+  padding-top: 12px;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  .grid.grid-cols-2
+  button {
+  min-height: 40px;
+
+  border-radius: 10px !important;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.min-h-screen.bg-slate-100 > main
+  > div.grid
+  > div
+  .grid.grid-cols-2
+  button:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   EMPTY / ERROR
+   ========================================================= */
+
+.min-h-screen.bg-slate-100 > main
+  > div.text-center {
+  background: white;
+
+  border: 1px dashed #cbd5e1;
+
+  border-radius: 18px;
+
+  padding: 70px 20px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1300px) {
+  .min-h-screen.bg-slate-100 > main {
+    max-width: 1250px !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main
+    > div.grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .min-h-screen.bg-slate-100 > main {
+    padding: 24px 20px 50px !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main
+    > div.grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main
+    > section:first-child
+    > div:first-child
+    h2 {
+    font-size: 34px !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .min-h-screen.bg-slate-100 > header > div {
+    padding: 12px 16px !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main {
+    padding: 18px 14px 40px !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main
+    > div.grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main
+    > section:first-child
+    > div:first-child {
+    padding: 24px !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main
+    > section:first-child
+    > div:first-child
+    h2 {
+    font-size: 30px !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main
+    > div.grid
+    > div
+    > div:first-child {
+    height: 180px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .min-h-screen.bg-slate-100 > main
+    > div.grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main
+    > div.grid
+    > div
+    > div:first-child {
+    height: 240px !important;
+  }
+
+  .min-h-screen.bg-slate-100 > main
+    > section:first-child
+    > div:first-child
+    h2 {
+    font-size: 26px !important;
+  }
+}
